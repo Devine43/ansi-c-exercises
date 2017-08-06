@@ -4,9 +4,9 @@ int main(){
     float fahr, celsius;
     float lower, upper, step;
 
-    lower = 0;
-    upper = 300;
-    step = 20;
+    lower = 0; /* Lower limit */
+    upper = 300; /* Upper limit */
+    step = 20; /* Step size */
 
     fahr = lower;
 
