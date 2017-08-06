@@ -1,2 +1,2 @@
 # ansi-c-exercises
-Exercises from the C Programming Language, Second Edition by Brian Kernighan and Dennis Ritchie.
+This repository contains my solutions to the exercises from The C Prorgamming Language book by Brian Kernighan and Dennis Ritchie.
