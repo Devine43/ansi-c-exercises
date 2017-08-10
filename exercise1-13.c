@@ -1,21 +1,18 @@
 #include <stdio.h>
-#define IN 1 /* inside a word */
-#define OUT 0 /* outside a word */
-
+/* This program calculates the length of words input by users 
+   and outputs the lengths in the form of a histogram */
 
 int main(){
-    int c, state, counter, index;
+    int c, counter, index;
     int lengthOfWord[10];
 
     /* Initialize array */ 
     for(int i = 0; i < 10; ++i)
         lengthOfWord[i] = 0;
 
-
-
-    state = OUT;
     counter = 0; //Keeps length of current word.
     index = 0;
+
 
     /* Counts length of words entered by users.*/
     while((c = getchar()) != 'R'){
@@ -29,8 +26,14 @@ int main(){
         
     }
 
-    /* Displays contents of array. */
-    for(int i = 0; i < 10; ++i)
-        printf("%d\n", lengthOfWord[i]);
+    /* Displays length of words via histogram. */
+    for(int i = 0; i < 10; ++i){
+        printf("%2d\t|", lengthOfWord[i]);
+        
+        for(int j = 0; j < lengthOfWord[i]; ++j){
+            printf("*");
+        }    
+        printf("\n");
+    }
     
 }
