@@ -3,7 +3,6 @@
 #define TABSIZE  4 //number of spaces a tab takes up
 
 int getLine(char line[], int maxline);
-void copy(char to[], char from[]);
 
 int main(){
     int len; // current line length 
@@ -46,12 +45,4 @@ int getLine(char s[], int lim){
     return i;
 }
 
-
-/*copy: copy 'from' into 'to' */
-void copy(char to[], char from[]){
-    int i = 0;
-
-    while((to[i] = from[i]) != '\0')
-        ++i;
-} 
 
