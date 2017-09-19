@@ -55,13 +55,8 @@ int entab(char line[], int spaces, int spaceStart){
     int i, spaceEnd, index;
     spaceEnd = spaceStart + spaces;
     index = spaceStart;
-    printf("Space End %d", spaceEnd);
     for(i = spaceStart; i <= spaceEnd; ++i){
-        printf("I: %d \n", i);
-        printf("SpaceStart: %d \n", spaceStart);
-        printf("SpaceEnd: %d \n", spaceEnd);
         if((spaceEnd - i) >= TABSIZE){
-            printf("INSIDE %d \n", spaces);
             line[index] = 'E';
             i = i + TABSIZE - 1;
             ++index;
