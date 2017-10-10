@@ -1,5 +1,4 @@
 #include <stdio.h>
-#define MAXSTRINGLENGTH 100
 /* Write an alternative version of squeeze(s1,s2) that deletes each character 
    in s1 that matches any character in s2.  */
 
@@ -18,8 +17,7 @@ int main(void){
 //Delets all characters in s that are in t.
 void squeeze(char s[], char t[]){
     int i, j; 
-    char stringWithRemovedCharacters[MAXSTRINGLENGTH];
-
+   
     for(i = j = 0; s[i] != '\0'; ++i){
         if(!isCharacterInString(s[i], t)){
             s[j++] = s[i];
